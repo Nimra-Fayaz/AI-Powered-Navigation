@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sect2">
+      <h3 id="_todos">TODOs</h3>
+      <div class="sect3">
+        <h4 id="_by_1710">By 17/10</h4>
+        <div class="admonitionblock note">
+          <table>
+            <tbody>
+              <tr>
+                <td class="icon">
+                  <i class="fa icon-note" title="Note"></i>
+                </td>
+                <td class="content">
+                  submit your work for Courses 1-2 as <em>LASTNAME.zip</em> to
+                  <a
+                    href="https://ecampus.emse.fr/mod/assign/view.php?id=33633"
+                    class="bare"
+                    >https://ecampus.emse.fr/mod/assign/view.php?id=33633</a
+                  >
+                  (expiration date/time: <code>2025-10-18 01:00</code> )
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admonitionblock warning">
+          <table>
+            <tbody>
+              <tr>
+                <td class="icon">
+                  <i class="fa icon-warning" title="Warning"></i>
+                </td>
+                <td class="content">
+                  If you are using the Windows operating system, you must ensure
+                  that you have installed the
+                  <a href="https://docs.microsoft.com/en-us/windows/wsl/install"
+                    >Windows Subsystem for Linux</a
+                  >, and that you run commands from the WSL2 unix shell.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admonitionblock note">
+          <table>
+            <tbody>
+              <tr>
+                <td class="icon">
+                  <i class="fa icon-note" title="Note"></i>
+                </td>
+                <td class="content">
+                  Windows users, I highly encourage you to read the following
+                  tutorials about WSL:
+                  <a
+                    href="https://learn.microsoft.com/en-us/windows/wsl/setup/environment"
+                    >Set up a WSL development environment</a
+                  >,
+                  <a
+                    href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode"
+                    >Get started using Visual Studio Code with Windows Subsystem
+                    for Linux</a
+                  >,
+                  <a
+                    href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gpu-compute"
+                    >Get started with GPU acceleration for ML in WSL</a
+                  >,
+                  <a
+                    href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps"
+                    >Run Linux GUI apps on the Windows Subsystem for Linux</a
+                  >,
+                  <a
+                    href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/linux"
+                    >Getting started with Linux and Bash
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="ulist">
+          <ul>
+            <li>
+              <p>
+                1/5 points - Describe the computer you are using in terms of
+                hardware and operating system(s).
+              </p>
+            </li>
+            <li>
+              <p>
+                1/5 points - You have installed a few useful programs, and can
+                call run successfully the following commands
+                <strong>in a unix shell</strong>. <strong>NOTE</strong>: For
+                each of these programs, you may need to ensure it is found in
+                the <code>PATH</code>, and potentially set other environment
+                variables, such as <code>JAVA_HOME</code> for maven:
+              </p>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      <a href="https://git-scm.com/">git</a> -
+                      <code>git --version</code>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Java_Development_Kit"
+                        >a version of the Java JDK</a
+                      >
+                      - <code>javac --version</code>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="https://maven.apache.org/">Apache Maven</a> -
+                      <code>mvn --version</code>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="https://www.gnu.org/software/make/">Make</a> -
+                      <code>make --version</code>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Python version above 3.10 - <code>python --version</code>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="">Docker Desktop</a> -
+                      <code>docker --version</code>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <p>
+                1/5 points - install <a href="https://ollama.com/">ollama</a>,
+                following instructions in the
+                <a href="https://github.com/ollama/ollama/tree/main/docs"
+                  >online documentation</a
+                >. Pull the
+                <a href="https://ollama.com/library/llama3.1"
+                  ><code>llama3.1</code></a
+                >
+                language model (or some lighter language model).
+              </p>
+            </li>
+            <li>
+              <p>
+                0.5/5 points - Use the
+                <a href="https://github.com/ollama/ollama/blob/main/docs/api.md"
+                  >ollama api</a
+                >
+                to query the model using the <code>curl</code> program.
+              </p>
+            </li>
+            <li>
+              <p>
+                0.5/5 points - Pipe the output of the command above with the
+                <a href="https://jqlang.github.io/jq/">jq</a> command-line JSON
+                processor to print out the response content.
+              </p>
+            </li>
+            <li>
+              <p>
+                0.5/5 points - Set up a ollama tool to allow browsing inside a
+                website
+              </p>
+            </li>
+            <li>
+              <p>
+                0.5/5 points - Write a bash script <code>ask.sh</code> that
+                satisfies the documentation below. To make it work, you may need
+                to develop a few ollama tools in python, or a combination of two
+                or more prompts in a loop that simulates reasoning.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="listingblock">
+          <div class="content">
+            <pre class="highlight"><code>USAGE:
+  ./ask.sh &lt;website&gt; "&lt;question&gt;"
+
+DESCRIPTION:
+  ask.sh is a command-line tool that answers a specific question based on
+  the content of a website.
+
+PARAMETERS:
+  &lt;website&gt;
+    The url of the Website to analyze. This parameter is required.
+
+  "&lt;question&gt;"
+    The question to ask about the content of the website. This parameter is required and
+    must be enclosed in quotes.</code></pre>
+          </div>
+        </div>
+        <div class="admonitionblock warning">
+          <table>
+            <tbody>
+              <tr>
+                <td class="icon">
+                  <i class="fa icon-warning" title="Warning"></i>
+                </td>
+                <td class="content">
+                  I need to see your use a unix shell ! neither cmd, nor
+                  powershell, nor MinGW
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admonitionblock tip">
+          <table>
+            <tbody>
+              <tr>
+                <td class="icon">
+                  <i class="fa icon-tip" title="Tip"></i>
+                </td>
+                <td class="content">
+                  <div class="title">How to get the points</div>
+                  <div class="paragraph">
+                    <p>
+                      You need to demonstrate everything works as expected by
+                      including a short screen recoding video (&lt;5min), in
+                      addition to the sources of your scripts.
+                    </p>
+                  </div>
+                  <div class="paragraph">
+                    <p>For example, if I run:</p>
+                  </div>
+                  <div class="listingblock">
+                    <div class="content">
+                      <pre
+                        class="highlight"
+                      ><code>./ask.sh https://www.mines-stetienne.fr/ "Name the research centers and departements of Mines Saint-Etienne, with their contact."</code></pre>
+                    </div>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      I would expect that the LLM chooses to navigate to
+                      <a
+                        href="https://www.mines-stetienne.fr/recherche/"
+                        class="bare"
+                        >https://www.mines-stetienne.fr/recherche/</a
+                      >
+                      , then
+                      <a
+                        href="https://www.mines-stetienne.fr/recherche/centres-et-departements/"
+                        class="bare"
+                        >https://www.mines-stetienne.fr/recherche/centres-et-departements/</a
+                      >
+                      , where it will find the following information:
+                    </p>
+                  </div>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          Centre Ingénierie et Santé - Vincent Augusto
+                          (information available here:
+                          <a
+                            href="https://www.mines-stetienne.fr/recherche/centres-et-departements/centre-ingenierie-et-sante/"
+                            class="bare"
+                            >https://www.mines-stetienne.fr/recherche/centres-et-departements/centre-ingenierie-et-sante/</a
+                          >
+                          )
+                        </p>
+                        <div class="ulist">
+                          <ul>
+                            <li>
+                              <p>
+                                STBio – Biomécanique des tissus mous - Stéphane
+                                Avril (
+                                <a
+                                  href="https://www.mines-stetienne.fr/recherche/centres-et-departements/"
+                                  class="bare"
+                                  >https://www.mines-stetienne.fr/recherche/centres-et-departements/</a
+                                >
+                                )
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                I4S – Ingénierie des Systèmes de Soins et des
+                                Services de Santé - Thierry Garaix (
+                                <a
+                                  href="https://www.mines-stetienne.fr/recherche/centres-et-departements/"
+                                  class="bare"
+                                  >https://www.mines-stetienne.fr/recherche/centres-et-departements/</a
+                                >
+                                )
+                              </p>
+                            </li>
+                            <li>
+                              <p>…​</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <p>
+                          Centre Microélectronique de Provence - Dominique
+                          Feillet (
+                          <a
+                            href="https://www.mines-stetienne.fr/recherche/centres-et-departements/centre-microelectronique-de-provence/"
+                            class="bare"
+                            >https://www.mines-stetienne.fr/recherche/centres-et-departements/centre-microelectronique-de-provence/</a
+                          >
+                          )
+                        </p>
+                        <div class="ulist">
+                          <ul>
+                            <li>
+                              <p>…​</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <p>
+                          Institut Henri Fayol - Olivier Boissier (
+                          <a
+                            href="https://www.mines-stetienne.fr/recherche/centres-et-departements/institut-henri-fayol/"
+                            class="bare"
+                            >https://www.mines-stetienne.fr/recherche/centres-et-departements/institut-henri-fayol/</a
+                          >
+                          )
+                        </p>
+                        <div class="ulist">
+                          <ul>
+                            <li>
+                              <p>…​</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <p>
+                          Sciences des Matériaux et des Structures - Christophe
+                          Desrayaud (
+                          <a
+                            href="https://www.mines-stetienne.fr/recherche/centres-et-departements/sciences-des-materiaux-et-des-structures/"
+                            class="bare"
+                            >https://www.mines-stetienne.fr/recherche/centres-et-departements/sciences-des-materiaux-et-des-structures/</a
+                          >
+                          )
+                        </p>
+                        <div class="ulist">
+                          <ul>
+                            <li>
+                              <p>…​</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <p>
+                          Sciences des Processus Industriels et Naturels - Ana
+                          Cameirao (
+                          <a
+                            href="https://www.mines-stetienne.fr/recherche/centres-et-departements/sciences-des-processus-industriels-et-naturels/"
+                            class="bare"
+                            >https://www.mines-stetienne.fr/recherche/centres-et-departements/sciences-des-processus-industriels-et-naturels/</a
+                          >
+                          )
+                        </p>
+                        <div class="ulist">
+                          <ul>
+                            <li>
+                              <p>…​</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admonitionblock note">
+          <table>
+            <tbody>
+              <tr>
+                <td class="icon">
+                  <i class="fa icon-note" title="Note"></i>
+                </td>
+                <td class="content">
+                  language models can clearly help you get part of the points,
+                  but I want to be sure it worked on your computer, and that you
+                  provide explanations for each component of the answer.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
